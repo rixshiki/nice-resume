@@ -7,7 +7,7 @@ class About extends React.Component {
 			<div className="About Container" id="About">
 				<div className="Item-container">
 				<div className="About-left-column center-top">
-					<img className="About-profile-pic" src="/img/Nice-pink-profile.jpg" />
+					<img className="About-profile-pic" src="/nice-resume/img/Nice-pink-profile.jpg" />
 					<div className="About-media">
 						<a href="https://web.facebook.com/tijnuehc" target="_blank"><img src="/img/icon-fb.png" /></a>
 						<a href="https://www.instagram.com/tijnuehc" target="_blank"><img src="/img/icon-ig.png" /></a>
@@ -19,7 +19,7 @@ class About extends React.Component {
 						<h1>Chuenjit Visin</h1>
 						<h2>Software Engineering</h2>
 					</div>
-					<a href="/ref/ChuenjitVisinResumeSoftwareDev.pdf" className="downloadCV-btn" target="_blank">Download CV</a>
+					<a href="/nice-resume/ref/ChuenjitVisinResumeSoftwareDev.pdf" className="downloadCV-btn" target="_blank">Download CV</a>
 					<table>
 						<tr>
 							<td>Age</td> <td>22</td>
