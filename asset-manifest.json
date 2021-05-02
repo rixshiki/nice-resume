@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nice-resume/static/css/main.d05e1dc2.chunk.css",
-    "main.js": "/nice-resume/static/js/main.d8cad194.chunk.js",
-    "main.js.map": "/nice-resume/static/js/main.d8cad194.chunk.js.map",
+    "main.js": "/nice-resume/static/js/main.70a0130c.chunk.js",
+    "main.js.map": "/nice-resume/static/js/main.70a0130c.chunk.js.map",
     "runtime-main.js": "/nice-resume/static/js/runtime-main.58314c17.js",
     "runtime-main.js.map": "/nice-resume/static/js/runtime-main.58314c17.js.map",
     "static/js/2.20bf1a55.chunk.js": "/nice-resume/static/js/2.20bf1a55.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.58314c17.js",
     "static/js/2.20bf1a55.chunk.js",
     "static/css/main.d05e1dc2.chunk.css",
-    "static/js/main.d8cad194.chunk.js"
+    "static/js/main.70a0130c.chunk.js"
   ]
 }
