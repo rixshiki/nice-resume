@@ -59,11 +59,12 @@
 .About-media a img {
 	width: 30px;
 	height: 30px;
+	opacity: 0.4;
 }
 .About-media a img:hover {
 	width: 30px;
 	height: 30px;
-	opacity: 50%;
+	opacity: 0.6;
 }
 .downloadCV-btn{
 	color: white;

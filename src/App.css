@@ -12,6 +12,7 @@
   height: auto;
   padding: 4px;
   cursor: pointer;
+  opacity: 0.6;
 }
 .Icon-nav{
   left: 15px;
