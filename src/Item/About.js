@@ -9,9 +9,9 @@ class About extends React.Component {
 				<div className="About-left-column center-top">
 					<img className="About-profile-pic" src="/nice-resume/img/Nice-pink-profile.jpg" />
 					<div className="About-media">
-						<a href="https://web.facebook.com/tijnuehc" target="_blank"><img src="/img/icon-fb.png" /></a>
-						<a href="https://www.instagram.com/tijnuehc" target="_blank"><img src="/img/icon-ig.png" /></a>
-						<a href="https://www.linkedin.com/in/chuenjit-visin-83b9041a3"><img src="/img/icon-linkedin.png" /></a>
+						<a href="https://web.facebook.com/tijnuehc" target="_blank"><img src="/nice-resume/img/icon-fb.png" /></a>
+						<a href="https://www.instagram.com/tijnuehc" target="_blank"><img src="/nice-resume/img/icon-ig.png" /></a>
+						<a href="https://www.linkedin.com/in/chuenjit-visin-83b9041a3"><img src="/nice-resume/img/icon-linkedin.png" /></a>
 					</div>
 				</div>
 				<div className="About-right-column">
