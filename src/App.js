@@ -1,25 +1,61 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Nav from './Nav/Nav';
+import About from './Item/About';
+import Skill from './Item/Skill';
+import Port from './Item/Port';
+import Exp from './Item/Exp';
+import Edu from './Item/Education';
+import Footer from './Item/Footer';
+import $ from 'jquery'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  componentDidMount() {
+    $(document).on('scroll', ()=>{
+      let currentScroll = window.scrollY,
+        AboutContainerPosition = 0,
+        SkillContainerPosition = $('#Skill').position().top - 60,
+        PortContainerPosition = $('#Port').position().top - 60,
+        ExpContainerPosition = $('#Exp').position().top - 60,
+        EduContainerPosition = $('#Edu').position().top - 60,
+        ContactContainerPosition = $(document).height() - $(window).height() - 2
+      let n = 1
+      
+      $('.Nav-grid li a').removeClass("active")
+      if(currentScroll >= ContactContainerPosition)   n = 6
+      else if(currentScroll >= EduContainerPosition)  n = 5
+      else if(currentScroll >= ExpContainerPosition)  n = 4
+      else if(currentScroll >= PortContainerPosition) n = 3
+      else if(currentScroll >= SkillContainerPosition) n = 2
+      else if(currentScroll >= AboutContainerPosition) n = 1
+      $('.Nav-grid li:nth-child('+ n +') a').addClass("active");
+    })    
+  }
+  openNav() {
+    document.getElementById("Nav").style.visibility = "visible"
+    document.getElementsByClassName("Icon-nav")[0].style.visibility = "hidden"
+    document.getElementsByClassName("Icon-back")[0].style.visibility = "visible"
+  }
+  closeNav() {
+    document.getElementById("Nav").style.visibility = "hidden"
+    document.getElementsByClassName("Icon-nav")[0].style.visibility = "visible"
+    document.getElementsByClassName("Icon-back")[0].style.visibility = "hidden"
+  }
+  render(){
+    return (
+      <div className="App center">
+        <img className="Icon-nav" src="/nice-resume/img/icon-navbar.png" onClick={this.openNav} />
+        <img className="Icon-back" src="/nice-resume/img/icon-back.png" onClick={this.closeNav} />
+        <Nav />
+        <About />
+        <Skill />
+        <Port />
+        <Exp />
+        <Edu />
+        <Footer />
+      </div>
+    );
+}
 }
 
 export default App;
