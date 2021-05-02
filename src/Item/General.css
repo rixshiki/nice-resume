@@ -33,10 +33,10 @@
 .About-right-column{ height: 100%; }
 .About-left-column {
   width: 40%;
-	flex-direction: column;
+  flex-direction: column;
 }
 .About-right-column{
-	padding-left: 10%;
+  padding-left: 10%;
   width: 60%;
 }
 .About-profile-pic {
@@ -59,7 +59,7 @@
 .About-media a img {
 	width: 30px;
 	height: 30px;
-	opacity: 30%;
+	opacity: 0.4;
 }
 .About-media a img:hover {
 	width: 30px;
