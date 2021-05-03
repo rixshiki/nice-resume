@@ -1,5 +1,5 @@
 .Item-container{
-	box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   box-shadow: 1px 1px 4px var(--light-grey);
 }
@@ -9,35 +9,138 @@
 	padding-top: 10%;
 }
 
-/* small size responsive */
-@media screen and (max-width: 1100px) {
+/* phone size */
+@media screen and (max-width: 800px) {
 	.Container{
-		width: 800px;
+		width: 90%;
+	}
+
+	.About .Item-container{
+		height: 700px;
+		width: 100%;
+		padding: 8%;
+		box-sizing: border-box;
+		display: inline-block;
+	}
+	.About-left-column,
+	.About-right-column{
+		height: 50%;
+		width: 100%;
+	}
+	.About-left-column {
+	  flex-direction: row;
+	}
+	.About-media {
+		flex-direction: column;
+		display: flex;
+		width: 10%;
+		height: 50%;
+		padding: 0 10%;
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+	.downloadCV-btn{
+		padding: 3% 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	.Skill div .Item-container{
+		padding: 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.Port-set-item-container{
+		height: 750px;
+		flex-direction: column;
+	}
+	.Port .Item-container {
+		width: 100%;
+		height: 32%;
+	}
+
+	.Exp .Item-container {
+		height: 440px;
+		padding: 10% 5%;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.Exp-column{
+		width: 100%;
+	}
+
+	.Education td {
+		padding: 2% 0;
+	}
+	.Education .Item-container {
+		height: 640px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 /* large size responsive */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 800px) {
 	.Container{
 		width: 70%;
 	}
-}
 
-.About .Item-container{
-	height: 460px;
-	width: 100%;
-	padding: 6%;
-	box-sizing: border-box;
-	display: inline-flex;
-}
-.About-left-column,
-.About-right-column{ height: 100%; }
-.About-left-column {
-  width: 40%;
-  flex-direction: column;
-}
-.About-right-column{
-  padding-left: 10%;
-  width: 60%;
+	.About .Item-container{
+		height: 460px;
+		width: 100%;
+		padding: 6%;
+		box-sizing: border-box;
+		display: inline-flex;
+	}
+	.About-left-column,
+	.About-right-column{ height: 100%; }
+	.About-left-column {
+	  width: 40%;
+	  flex-direction: column;
+	}
+	.About-right-column{
+	  padding-left: 10%;
+	  width: 60%;
+	}
+	.About-media {
+		flex-direction: row;
+		display: flex;
+		width: 100%;
+		padding: 15%;
+		box-sizing: border-box;
+		justify-content: space-around;
+	}
+	.downloadCV-btn{
+		padding: 3% 5%;
+	}
+
+	.Skill div .Item-container{
+		padding: 6%;
+	}
+
+	.Port-set-item-container{
+		height: 200px;
+		flex-direction: row;
+	}
+	.Port .Item-container {
+		width: 30%;
+		height: 100%;
+	}
+
+	.Exp .Item-container {
+		height: 260px;
+		padding: 5%;
+	}
+	.Exp-column{
+		height: 100%;
+		width: 50%;
+	}
+
+	.Education .Item-container {
+		height: 500px;
+	}
 }
 .About-profile-pic {
   width: 200px;
@@ -46,16 +149,8 @@
   object-fit: cover;
 }
 .About-profile-head h1,
-.About-profile-head h2{ margin: 0; }
+.About-profile-head h2 { margin: 0; }
 .About-profile-head h2 { color: var(--light-grey);}
-.About-media {
-	flex-direction: row;
-	display: flex;
-	width: 100%;
-	padding: 15%;
-	box-sizing: border-box;
-	justify-content: space-around;
-}
 .About-media a img {
 	width: 30px;
 	height: 30px;
@@ -66,10 +161,10 @@
 	height: 30px;
 	opacity: 0.6;
 }
+
 .downloadCV-btn{
 	color: white;
 	display: inline-block;
-	padding: 3% 5%;
 	margin: 10% 0;
 	font-weight: bold;
 	border: none;
@@ -102,7 +197,6 @@
 .Skill div .Item-container{
 	width: 100%;
 	height: 100%;
-	padding: 6%;
 }
 .Skill ul li{
 	list-style-type: none;
@@ -112,14 +206,8 @@
 
 .Port-set-item-container{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	height: 200px;
-}
-.Port .Item-container {
-	width: 30%;
-	height: 100%;
 }
 .Port a{
 	text-decoration: none;
@@ -132,19 +220,11 @@
 .Port span{ height: 20%; }
 
 
-.Exp .Item-container {
-	height: 260px;
-}
 .Exp-column {
-	height: 100%;
-	width: 50%;
-	padding: 5%;
 	box-sizing: border-box;
 }
 
-
 .Education .Item-container {
-	height: 500px;
 	padding: 5%;
 }
 .Education h4,

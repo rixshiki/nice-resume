@@ -6,7 +6,7 @@ class Skill extends React.Component {
 		return (
 			<div className="Skill Container" id="Skill">
 				<div>
-					<h3>Programming Skill</h3>
+					<h3>Technical Skill</h3>
 					<ul className="Item-container">
 						<li>Vue.js, React.js</li>
 						<li>Java</li>

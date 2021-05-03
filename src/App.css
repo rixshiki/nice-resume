@@ -18,8 +18,9 @@
   left: 15px;
 }
 .Icon-back{
-  left: 200px;
+  left: 15px;
   visibility: hidden;
+  z-index: 20;
 }
 
 /* small size responsive */

@@ -12,14 +12,16 @@ class Exp extends React.Component {
 						<h5>REPORT EVERY DAY DATA FOR EACH HOSPITAL IN COMMUNITY</h5>
 						Front-end : Vue.js <br/>
 						Back-end : Django Python <br/>
-						Database : MySQL
+						Database : MySQL <br/>
+						<center><i>( Intership with KMITL )</i></center>
 					</div>
 					<div className="Exp-column">
 					<h4>sme Management Project</h4>
 					<h5>WEBSITE FOR SME CONVENIENT</h5>
 						Front-end : HTML CSS JS <br/>
 						Back-end : Java Spring boot <br/>
-						Database : MySQL
+						Database : MySQL <br/>
+						<center><i>( Graduate project )</i></center>
 					</div>
 				</div>
 		  </div>
