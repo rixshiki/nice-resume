@@ -35,12 +35,12 @@
 
 /* small size responsive */
 @media screen and (max-width: 1100px) {
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 500px) {
 		.Nav{
 			width: 160px;
 		}
 	}
-	@media screen and (min-width: 450px) {
+	@media screen and (min-width: 500px) {
 		.Nav{
 			width: 200px;
 		}
