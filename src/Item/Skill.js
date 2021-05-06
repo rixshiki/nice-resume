@@ -21,8 +21,8 @@ class Skill extends React.Component {
 						<li>Adaptability</li>
 						<li>Punctual</li>
 						<li>Disciplined</li>
-						<li>Time-management</li>
-						<li>Deferential</li>
+						<li>Open to suggestion</li>
+						<li>Responsible</li>
 					</ul>
 				</div>
 			</div>
