@@ -19,7 +19,7 @@ class About extends React.Component {
 						<h1>Chuenjit Visin</h1>
 						<h2>Software Engineering</h2>
 					</div>
-					<a href="/nice-resume/ref/ChuenjitVisinResumeSoftwareDev.pdf" className="downloadCV-btn" target="_blank">Download Resume</a>
+					<a href="/nice-resume/ref/ChuenjitCV.pdf" className="downloadCV-btn" target="_blank">Download CV</a>
 					<table>
 						<tr>
 							<td>Age</td> <td>22</td>
