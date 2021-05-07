@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nice-resume/static/css/main.1efde037.chunk.css",
-    "main.js": "/nice-resume/static/js/main.2035d316.chunk.js",
-    "main.js.map": "/nice-resume/static/js/main.2035d316.chunk.js.map",
+    "main.css": "/nice-resume/static/css/main.66f74071.chunk.css",
+    "main.js": "/nice-resume/static/js/main.0e26cd1d.chunk.js",
+    "main.js.map": "/nice-resume/static/js/main.0e26cd1d.chunk.js.map",
     "runtime-main.js": "/nice-resume/static/js/runtime-main.58314c17.js",
     "runtime-main.js.map": "/nice-resume/static/js/runtime-main.58314c17.js.map",
     "static/js/2.20bf1a55.chunk.js": "/nice-resume/static/js/2.20bf1a55.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.6d5479f3.chunk.js": "/nice-resume/static/js/3.6d5479f3.chunk.js",
     "static/js/3.6d5479f3.chunk.js.map": "/nice-resume/static/js/3.6d5479f3.chunk.js.map",
     "index.html": "/nice-resume/index.html",
-    "static/css/main.1efde037.chunk.css.map": "/nice-resume/static/css/main.1efde037.chunk.css.map",
+    "static/css/main.66f74071.chunk.css.map": "/nice-resume/static/css/main.66f74071.chunk.css.map",
     "static/js/2.20bf1a55.chunk.js.LICENSE.txt": "/nice-resume/static/js/2.20bf1a55.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.58314c17.js",
     "static/js/2.20bf1a55.chunk.js",
-    "static/css/main.1efde037.chunk.css",
-    "static/js/main.2035d316.chunk.js"
+    "static/css/main.66f74071.chunk.css",
+    "static/js/main.0e26cd1d.chunk.js"
   ]
 }
