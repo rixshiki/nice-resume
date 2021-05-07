@@ -20,12 +20,12 @@
 	}
 
 	.Port-set-item-container{
-		height: 750px;
+		height: 1000px;
 		flex-direction: column;
 	}
 	.Port .Item-container {
 		width: 100%;
-		height: 32%;
+		height: 24%;
 	}
 
 	.Exp .Item-container {
@@ -121,13 +121,18 @@
 		box-sizing: border-box;
 	}
 
+	.Port{
+		height: 500px;
+	}
 	.Port-set-item-container{
 		height: 200px;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	.Port .Item-container {
 		width: 30%;
 		height: 100%;
+		margin-bottom: 2%;
 	}
 
 	.Exp .Item-container {
