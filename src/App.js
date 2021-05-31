@@ -11,7 +11,9 @@ import $ from 'jquery'
 
 class App extends React.Component {
   componentDidMount() {
-    $(document).on('scroll', ()=>{
+
+    // Navigator Bar yellow line active read by current scroll position
+    $(document).on('scroll', () => {
       let currentScroll = window.scrollY,
         AboutContainerPosition = 0,
         SkillContainerPosition = $('#Skill').position().top - 60,
@@ -19,18 +21,19 @@ class App extends React.Component {
         ExpContainerPosition = $('#Exp').position().top - 60,
         EduContainerPosition = $('#Edu').position().top - 60,
         ContactContainerPosition = $(document).height() - $(window).height() - 2
+      let listContainerPosition =
+        [AboutContainerPosition, SkillContainerPosition, PortContainerPosition,
+          ExpContainerPosition, EduContainerPosition, ContactContainerPosition]
       let n = 1
-      
+
       $('.Nav-grid li a').removeClass("active")
-      if(currentScroll >= ContactContainerPosition)   n = 6
-      else if(currentScroll >= EduContainerPosition)  n = 5
-      else if(currentScroll >= ExpContainerPosition)  n = 4
-      else if(currentScroll >= PortContainerPosition) n = 3
-      else if(currentScroll >= SkillContainerPosition) n = 2
-      else if(currentScroll >= AboutContainerPosition) n = 1
-      $('.Nav-grid li:nth-child('+ n +') a').addClass("active");
-    })    
+      listContainerPosition.forEach((element, index) => {
+        if (currentScroll >= element) n = index + 1
+      });
+      $('.Nav-grid li:nth-child(' + n + ') a').addClass("active");
+    })
   }
+
   openNav() {
     document.getElementById("Nav").style.visibility = "visible"
     document.getElementsByClassName("Icon-nav")[0].style.visibility = "hidden"
@@ -41,7 +44,8 @@ class App extends React.Component {
     document.getElementsByClassName("Icon-nav")[0].style.visibility = "visible"
     document.getElementsByClassName("Icon-back")[0].style.visibility = "hidden"
   }
-  render(){
+
+  render() {
     return (
       <div className="App center">
         <img className="Icon-nav" src="/nice-resume/img/icon-navbar.png" onClick={this.openNav} />
@@ -55,7 +59,7 @@ class App extends React.Component {
         <Footer />
       </div>
     );
-}
+  }
 }
 
 export default App;
