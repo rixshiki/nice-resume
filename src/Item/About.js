@@ -26,7 +26,7 @@ const About = () => (
 						<td>Address</td> <td>30/2 m.11, Bangnampueng, Phrapradaeng, Samutprakarn</td>
 					</tr>
 					<tr>
-						<td>E-mail</td> <td>cheuenjit.vis@gmail.com</td>
+						<td>E-mail</td> <td>chuenjit.vis@gmail.com</td>
 					</tr>
 					<tr>
 						<td>Phone</td> <td>080 915 9587</td>
