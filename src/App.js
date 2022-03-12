@@ -22,8 +22,12 @@ class App extends React.Component {
         EduContainerPosition = $('#Edu').position().top - 60,
         ContactContainerPosition = $(document).height() - $(window).height() - 2
       let listContainerPosition =
-        [AboutContainerPosition, SkillContainerPosition, PortContainerPosition,
-          ExpContainerPosition, EduContainerPosition, ContactContainerPosition]
+        [AboutContainerPosition, 
+          SkillContainerPosition, 
+          PortContainerPosition,
+          ExpContainerPosition, 
+          EduContainerPosition, 
+          ContactContainerPosition]
       let n = 1
 
       $('.Nav-grid li a').removeClass("active")
